@@ -92,7 +92,8 @@
             this.button1.TabStop = false;
             this.button1.Text = "LOGOUT";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnReturn
             // 
@@ -101,7 +102,7 @@
             this.btnReturn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnReturn.Location = new System.Drawing.Point(3, 499);
+            this.btnReturn.Location = new System.Drawing.Point(4, 499);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(272, 56);
             this.btnReturn.TabIndex = 12;
@@ -116,13 +117,14 @@
             this.btnIssued.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnIssued.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIssued.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnIssued.Location = new System.Drawing.Point(3, 437);
+            this.btnIssued.Location = new System.Drawing.Point(4, 437);
             this.btnIssued.Name = "btnIssued";
             this.btnIssued.Size = new System.Drawing.Size(272, 56);
             this.btnIssued.TabIndex = 11;
             this.btnIssued.TabStop = false;
             this.btnIssued.Text = "ISSUED BOOKS";
             this.btnIssued.UseVisualStyleBackColor = true;
+            this.btnIssued.CheckedChanged += new System.EventHandler(this.btnIssued_CheckedChanged);
             // 
             // btnBook
             // 
@@ -131,7 +133,7 @@
             this.btnBook.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBook.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBook.Location = new System.Drawing.Point(3, 375);
+            this.btnBook.Location = new System.Drawing.Point(4, 375);
             this.btnBook.Name = "btnBook";
             this.btnBook.Size = new System.Drawing.Size(272, 56);
             this.btnBook.TabIndex = 10;
@@ -147,7 +149,7 @@
             this.btnStudents.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStudents.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnStudents.Location = new System.Drawing.Point(3, 313);
+            this.btnStudents.Location = new System.Drawing.Point(4, 313);
             this.btnStudents.Name = "btnStudents";
             this.btnStudents.Size = new System.Drawing.Size(272, 56);
             this.btnStudents.TabIndex = 9;
@@ -186,6 +188,7 @@
             this.btnDashboard.TabStop = false;
             this.btnDashboard.Text = "DASHBOARD";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.CheckedChanged += new System.EventHandler(this.btnDashboard_CheckedChanged);
             // 
             // MainPanel
             // 

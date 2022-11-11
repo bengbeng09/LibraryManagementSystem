@@ -68,5 +68,27 @@ namespace LibraryManagementSystem
             this.MainPanel.Controls.Add(bk);
             bk.Show();
         }
+
+        private void btnDashboard_CheckedChanged(object sender, EventArgs e)
+        {
+            clearCheckBox(btnDashboard);
+            MainPanel.Refresh();
+        }
+
+        private void btnIssued_CheckedChanged(object sender, EventArgs e)
+        {
+            clearCheckBox(btnIssued);
+            MainPanel.Refresh();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you sure?", "Logout", MessageBoxButtons.OKCancel) == DialogResult.OK){
+                this.Close();
+                LoginForm login = new LoginForm();
+                login.Show();
+            }
+
+        }
     }
 }
