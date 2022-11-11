@@ -125,24 +125,28 @@
             // 
             // tbPassword
             // 
+            this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(100)))), ((int)(((byte)(112)))));
             this.tbPassword.Location = new System.Drawing.Point(24, 191);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(179, 23);
+            this.tbPassword.PasswordChar = '•';
+            this.tbPassword.Size = new System.Drawing.Size(179, 22);
             this.tbPassword.TabIndex = 1;
-            this.tbPassword.TabStop = false;
             // 
             // tbUsername
             // 
+            this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbUsername.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(100)))), ((int)(((byte)(112)))));
             this.tbUsername.Location = new System.Drawing.Point(24, 148);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(179, 23);
+            this.tbUsername.Size = new System.Drawing.Size(179, 22);
             this.tbUsername.TabIndex = 0;
-            this.tbUsername.TabStop = false;
             // 
             // LoginForm
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(613, 371);
