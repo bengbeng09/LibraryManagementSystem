@@ -30,5 +30,14 @@ namespace LibraryManagementSystem
                 }
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            sidebar.Focus();
+            if (MessageBox.Show("Are you sure?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                System.Windows.Forms.Application.Exit();
+            }
+        }
     }
 }

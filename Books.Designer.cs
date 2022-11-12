@@ -28,26 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnDetails = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.lblSortBy = new System.Windows.Forms.Label();
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.dgv = new System.Windows.Forms.DataGridView();
-            this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edition = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.publisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.publication = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.copies = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDetails
@@ -225,40 +205,16 @@
             // 
             // publication
             // 
-            this.publication.DataPropertyName = "publication";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.publication.DefaultCellStyle = dataGridViewCellStyle1;
-            this.publication.HeaderText = "Publication";
-            this.publication.MinimumWidth = 8;
-            this.publication.Name = "publication";
-            this.publication.Width = 150;
             // 
-            // copies
+            // button1
             // 
-            this.copies.DataPropertyName = "copies";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.copies.DefaultCellStyle = dataGridViewCellStyle2;
-            this.copies.HeaderText = "Copies";
-            this.copies.MinimumWidth = 8;
-            this.copies.Name = "copies";
-            this.copies.Width = 150;
             // 
             // Books
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1070, 1223);
-            this.Controls.Add(this.dgv);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.btnDetails);
-            this.Controls.Add(this.lblSearch);
-            this.Controls.Add(this.lblSortBy);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Books";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Books";
@@ -270,22 +226,6 @@
         }
 
         #endregion
-        private Button btnDetails;
-        private Button btnDelete;
-        private Button btnAdd;
-        private Button btnUpdate;
-        private Label lblSortBy;
-        private Label lblSearch;
-        private TextBox txtSearch;
-        private ListBox listBox1;
-        private DataGridView dgv;
-        private DataGridViewTextBoxColumn title;
-        private DataGridViewTextBoxColumn edition;
-        private DataGridViewTextBoxColumn category;
-        private DataGridViewTextBoxColumn author;
-        private DataGridViewTextBoxColumn status;
-        private DataGridViewTextBoxColumn publisher;
-        private DataGridViewTextBoxColumn publication;
-        private DataGridViewTextBoxColumn copies;
+
     }
 }

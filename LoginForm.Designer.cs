@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.sidebar = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogin365 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,23 +36,25 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbUsername = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.sidebar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // sidebar
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.btnLogin365);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.tbPassword);
-            this.panel1.Controls.Add(this.tbUsername);
-            this.panel1.Location = new System.Drawing.Point(393, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 372);
-            this.panel1.TabIndex = 0;
+            this.sidebar.BackColor = System.Drawing.Color.White;
+            this.sidebar.Controls.Add(this.btnClose);
+            this.sidebar.Controls.Add(this.label3);
+            this.sidebar.Controls.Add(this.btnLogin365);
+            this.sidebar.Controls.Add(this.label2);
+            this.sidebar.Controls.Add(this.label1);
+            this.sidebar.Controls.Add(this.btnLogin);
+            this.sidebar.Controls.Add(this.tbPassword);
+            this.sidebar.Controls.Add(this.tbUsername);
+            this.sidebar.Location = new System.Drawing.Point(393, 0);
+            this.sidebar.Name = "sidebar";
+            this.sidebar.Size = new System.Drawing.Size(220, 372);
+            this.sidebar.TabIndex = 0;
             // 
             // label3
             // 
@@ -144,27 +145,40 @@
             this.tbUsername.Size = new System.Drawing.Size(179, 22);
             this.tbUsername.TabIndex = 0;
             // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(37)))), ((int)(((byte)(23)))));
+            this.btnClose.Location = new System.Drawing.Point(195, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(27, 27);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.TabStop = false;
+            this.btnClose.Text = "✖";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // LoginForm
             // 
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(613, 371);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.sidebar.ResumeLayout(false);
+            this.sidebar.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Panel panel1;
+        private Panel sidebar;
         private Label label3;
         private Button btnLogin365;
         private Label label2;
@@ -172,5 +186,6 @@
         private Button btnLogin;
         private TextBox tbPassword;
         private TextBox tbUsername;
+        private Button btnClose;
     }
 }
