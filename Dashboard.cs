@@ -81,15 +81,25 @@ namespace LibraryManagementSystem
         private void btnIssued_MouseClick(object sender, MouseEventArgs e)
         {
             clearCheckBox(btnIssued);
+            Issued issues = new Issued();
+            issues.TopLevel = false;
+            issues.AutoScroll = true;
             MainPanel.Controls.Clear();
             MainPanel.Refresh();
+            this.MainPanel.Controls.Add(issues);
+            issues.Show();
         }
 
         private void btnReturn_MouseClick(object sender, MouseEventArgs e)
         {
             clearCheckBox(btnReturn);
+            Return returns = new Return();
+            returns.TopLevel = false;
+            returns.AutoScroll = true;
             MainPanel.Controls.Clear();
             MainPanel.Refresh();
+            this.MainPanel.Controls.Add(returns);
+            returns.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
